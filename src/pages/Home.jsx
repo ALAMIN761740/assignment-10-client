@@ -34,7 +34,7 @@ export default function Home() {
 
   // Fetch Featured Tasks
   useEffect(() => {
-    fetch("http://localhost:4000/api/taskroute/alltask")
+    fetch("https://assigment-10-server.onrender.com/api/taskroute/alltask")
       .then((res) => res.json())
       .then((data) => {
         if (data.success) {

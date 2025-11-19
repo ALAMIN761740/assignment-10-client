@@ -11,7 +11,7 @@ const MyTasks = () => {
     const fetchTasks = async () => {
       if (!user?.email) return;
       try {
-        const res = await fetch("http://localhost:4000/api/taskroute/mytaskdata", {
+        const res = await fetch("https://assigment-10-server.onrender.com/api/taskroute/mytaskdata", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ email: user.email }),

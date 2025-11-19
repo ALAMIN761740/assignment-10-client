@@ -29,7 +29,7 @@ export default function BrowseTasks() {
     const fetchTasks = async () => {
       setLoading(true);
       try {
-        const res = await fetch("http://localhost:4000/api/taskroute/alltask");
+        const res = await fetch("https://assigment-10-server.onrender.com/api/taskroute/alltask");
         if (!res.ok) throw new Error(`Server: ${res.status}`);
         const json = await res.json();
         if (mounted) setTasks(json.data || []);

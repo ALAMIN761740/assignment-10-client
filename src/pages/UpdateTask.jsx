@@ -10,7 +10,7 @@ const UpdateTask = () => {
   // Load Task
   useEffect(() => {
     const gettask = async () => {
-      await fetch(`http://localhost:4000/api/taskroute/tasks/${id}`)
+      await fetch(`https://assigment-10-server.onrender.com/api/taskroute/tasks/${id}`)
         .then((res) => res.json())
         .then((data) => setTask(data))
         .catch((err) => {
