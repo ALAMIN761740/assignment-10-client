@@ -149,7 +149,7 @@ const Register = () => {
             {loading ? "Registering..." : "Register"}
           </button>
         </form>
-
+<br />
         <button
           onClick={handleGoogleLogin}
           className="w-full flex items-center justify-center gap-2 bg-red-500 text-white py-2 rounded hover:bg-red-600 transition"
