@@ -31,7 +31,7 @@ const MyTasks = () => {
 
   const handleDelete = async (id) => {
     try {
-      const res = await fetch(`http://localhost:4000/api/taskroute/tasks/${id}`, { method: "DELETE" });
+      const res = await fetch(`https://assigment-10-server.onrender.com/api/taskroute/tasks/${id}`, { method: "DELETE" });
       const data = await res.json();
       if (data.success) {
         toast.success("Task Deleted!");

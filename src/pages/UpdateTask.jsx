@@ -37,7 +37,7 @@ const UpdateTask = () => {
     };
 
     try {
-      const res = await fetch(`http://localhost:4000/api/taskroute/tasks/${id}`, {
+      const res = await fetch(`https://assigment-10-server.onrender.com/api/taskroute/tasks/${id}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(updatedTask),
